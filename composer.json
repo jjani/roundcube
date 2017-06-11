@@ -18,5 +18,5 @@
     "require": {
         "roundcube/plugin-installer": "*"
     },
-    "minimum-stability": "dev-master"
+    "minimum-stability": "dev"
 }
