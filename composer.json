@@ -1,33 +1,22 @@
 {
-    "name": "roundcube/plugin-installer",
-    "description": "A composer-installer for Roundcube plugins.",
-    "type": "composer-installer",
+    "name": "jjani/plugin-installer",
     "license": "GPL-3.0+",
+    "description": "Roundcube plugin installer",
+    "type": "roundcube-plugin",
     "authors": [
         {
-            "name": "Juhász János",
+            "name": "Janos Juhasz",
             "email": "juhasz.janos@foc.hu"
-        },
+        }
+    ],
+    "repositories": [
         {
-            "name": "Till Klampaeckel",
-            "email": "till@php.net"
+            "type": "composer",
+            "url": "http://plugins.roundcube.net"
         }
-    ],
-    "autoload": {
-        "psr-0": {
-            "Roundcube\\Composer": "src/"
-        }
-    },
-    "extra": {
-        "class": "Roundcube\\Composer\\PluginInstaller"
-    },
-    "bin": [
-        "src/bin/rcubeinitdb.sh"
-    ],
+    ]
     "require": {
-        "php": ">=5.3.0"
+        "roundcube/plugin-installer": "*"
     },
-    "require-dev": {
-        "composer/composer": "*"
-    }
+    "minimum-stability": "dev-master"
 }
